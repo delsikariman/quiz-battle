@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "quiz-battle-client",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/delsikariman/Documents/Game/quiz-battle/client",
+      "port": 5173
+    }
+  ]
+}

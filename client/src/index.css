@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-white min-h-screen;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .answer-btn {
+    @apply w-full text-left px-5 py-4 rounded-xl border-2 font-medium text-base
+           transition-all duration-200 cursor-pointer select-none;
+  }
+  .answer-btn-idle {
+    @apply border-gray-700 bg-gray-800 hover:border-indigo-500 hover:bg-gray-700;
+  }
+  .answer-btn-correct {
+    @apply border-green-500 bg-green-900/50 text-green-300;
+  }
+  .answer-btn-wrong {
+    @apply border-red-500 bg-red-900/50 text-red-300;
+  }
+  .answer-btn-reveal {
+    @apply border-green-500 bg-green-900/30 text-green-400;
+  }
+  .answer-btn-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}
